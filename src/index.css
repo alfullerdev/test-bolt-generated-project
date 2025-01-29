@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-gray-900;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .auth-title {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+  }
+}
